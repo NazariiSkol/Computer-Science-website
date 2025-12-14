@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Міні-гра «Drone Defender»</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="game.js"></script>
+</head>
+<body class="game-body">
+  <header class="top-bar">
+    <div class="logo">
+      Drone Defender · Кафедра КН ВНТУ
+    </div>
+    <nav class="top-nav">
+      <a href="index.html">На головну</a>
+    </nav>
+  </header>
+
+  <main class="game-main">
+    <section class="game-panel">
+
+      <button id="endGameBtn" style="margin-top:10px; background-color: #ef4444; color: white;">
+  Стоп / Показати статистику
+      </button>
+
+      <h1>Міні-гра «Drone Defender»</h1>
+      <p>
+        Керуй дроном та знищуй ворожу техніку, скидаючи боєприпаси.
+      </p>
+      <ul class="controls-list">
+        <li><b>W</b> — рух вгору</li>
+        <li><b>A</b> — ліворуч</li>
+        <li><b>S</b> — вниз</li>
+        <li><b>D</b> — праворуч</li>
+        <li><b>Пробіл</b> — скинути боєприпас</li>
+      </ul>
+
+      <!-- 🔥 КНОПКА ПЕРЕЗАПУСКУ ГРИ -->
+      <button id="restartBtn" style="margin-top:10px; display:none;">
+        Перезапустити гру
+      </button>
+
+    </section>
+
+    <section class="game-canvas-wrapper">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Розроблено як навчальний проєкт з фронтенд JavaScript.</p>
+  </footer>
+</body>
+</html>
